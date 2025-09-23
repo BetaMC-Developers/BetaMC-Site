@@ -98,6 +98,14 @@ body.donations #mainText {
     font-style: normal;
 }
 
+.kofiimg {
+    overflow: hidden;
+}
+
+.kofiimg img {
+    width: 100%;
+}
+
 .rotate {
     transform:rotate(-20deg);
     text-align: center;
