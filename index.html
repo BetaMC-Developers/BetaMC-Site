@@ -28,7 +28,7 @@
             <div id="mainText">
                 <h1>BetaMC</h1>
                 <div class="rotate"><div id="splashText" class="pop">Coming SoonTM!</div></div>
-                <h2>IP: betamc.org</h2>
+                <h2 class="server-ip" onclick="copyToClipboard('betamc.org')" style="cursor:pointer;">IP: betamc.org</h2>
                 <span>"True and Real" Beta 1.7.3 Minecraft<br></span><br>
             </div> 
             <div id="discordLink">
@@ -45,4 +45,9 @@
             <a href="https://www.tiktok.com/@bmcserver"><img src="Assets/tiktok-logo-32.png" alt="TikTok link"></a>
         </div>
     </body>
+    <script>
+        function copyToClipboard(text) {
+          navigator.clipboard.writeText(text);
+        }
+    </script>
 </html>
