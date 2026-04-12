@@ -3,47 +3,37 @@
     <head>
         <title>BetaMC - About</title>
         <link rel="stylesheet" href="/styles.css">
-        <script src="script.js"></script>
+        <script src="/script.js"></script>
         <link rel="icon" type="image/x-icon" href="/Assets/BetaMC_Favicon.png">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css">
     </head>
 
     <body>
         <a href="/">
-            <img src="Assets/BetaMC_Logo.png" class="navLogo">
+            <img src="/Assets/BetaMC_Logo.png" class="navLogo">
         </a>
         {{include "partial/navbar.html"}}
-
         <div id="mainAbout">
             <div id="mainText">
                 <h1>About Us</h1>
-                    <div id="aboutContent">
-                        <span> BetaMC is a Beta 1.7.3 Minecraft server dedicated to bringing the best combination of economy, town building, and vanilla 1.7.3 gameplay to the player!</span><br>
-                        <br>
-                        <li>Awesome community </li>
-                        <li>Active developers</li>
-                        <li>Experienced staffing team</li>
-                        <li>Laid-back environment</li>
-                    </div>
+                <div id="aboutContent">
+                    <span> BetaMC is a Beta 1.7.3 Minecraft server dedicated to bringing the best combination of economy, town building, and vanilla 1.7.3 gameplay to the player!</span><br>
                     <br>
-                    <hr>
+                    <div>Awesome community </div>
+                    <div>Active developers</div>
+                    <div>Experienced staffing team</div>
+                    <div>Laid-back environment</div>
+                </div>
+                <br>
+                <hr>
                 <h1>Gameplay Features</h1>
-                        <li>Player towns</li>
-                        <li>Player-run economy</li>
-                        <li>Overworld PvP</li>
-                        <li>Community events</li>
-                        <li>New and improved features implemented regularly!</li>
-
+                <div>Player towns</div>
+                <div>Player-run economy</div>
+                <div>Overworld PvP</div>
+                <div>Community events</div>
+                <div>New and improved features implemented regularly!</div>
             </div>
         </div>
-        <div class="footerContainer">
-            <a href="https://github.com/BetaMC-Developers/BetaMC-Site">Website by jcheese7 and contributors</a><br>
-            <a href="https://fontlibrary.org/en/font/minecraftia">Minecraftia font by Andrew Tyler</a>
-        </div>
-        <div class="footerSocials">
-            <a href="https://discord.gg/Kkd4Fqs97t"><img src="Assets/discord-logo-32.png" alt="Discord link"></a>
-            <a href="https://www.youtube.com/@BetaMCServer"><img src="Assets/youtube-logo-32.png" alt="YouTube link"></a>
-            <a href="https://www.tiktok.com/@bmcserver"><img src="Assets/tiktok-logo-32.png" alt="TikTok link"></a>
-        </div>
+        {{include "partial/footer.html"}}
     </body>
 </html>

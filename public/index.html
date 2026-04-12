@@ -3,17 +3,16 @@
     <head>
         <title>BetaMC - Home</title>
         <link rel="stylesheet" href="/styles.css">
-        <script src="script.js"></script>
+        <script src="/script.js"></script>
         <link rel="icon" type="image/x-icon" href="/Assets/BetaMC_Favicon.png">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css">
     </head>
 
     <body onload="onPageLoaded()">
         <a href="/">
-            <img src="Assets/BetaMC_Logo.png" class="navLogo">
+            <img src="/Assets/BetaMC_Logo.png" class="navLogo">
         </a>
         {{include "partial/navbar.html"}}
-
         <div id="mainDiv">
             <div id="mainText">
                 <h1>BetaMC</h1>
@@ -22,18 +21,10 @@
                 <span>"True and Real" Beta 1.7.3 Minecraft<br></span><br>
             </div> 
             <div id="discordLink">
-                <a href="https://discord.gg/Kkd4Fqs97t"><img src="Assets/discord-mark-white.png" alt="Discord link">Join our Discord!</a>
+                <a href="https://discord.gg/Kkd4Fqs97t"><img src="/Assets/discord-mark-white.png" alt="Discord link">Join our Discord!</a>
             </div>
         </div>
-        <div class="footerContainer">
-            <a href="https://github.com/BetaMC-Developers/BetaMC-Site">Website by jcheese7 and contributors</a><br>
-            <a href="https://fontlibrary.org/en/font/minecraftia">Minecraftia font by Andrew Tyler</a>
-        </div>
-        <div class="footerSocials">
-            <a href="https://discord.gg/Kkd4Fqs97t"><img src="Assets/discord-logo-32.png" alt="Discord link"></a>
-            <a href="https://www.youtube.com/@BetaMCServer"><img src="Assets/youtube-logo-32.png" alt="YouTube link"></a>
-            <a href="https://www.tiktok.com/@bmcserver"><img src="Assets/tiktok-logo-32.png" alt="TikTok link"></a>
-        </div>
+        {{include "partial/footer.html"}}
     </body>
     <script>
         function copyToClipboard(text) {
