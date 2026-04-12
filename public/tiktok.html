@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>BetaMC - Home</title>
+        <title>About</title>
+        <meta http-equiv="refresh" content="0; url=https://www.tiktok.com/@bmcserver">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
         <link rel="icon" type="image/x-icon" href="Assets/BetaMC_Favicon.png">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"> 
+        <script src="script.js"></script>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css">
     </head>
 
-    <body onload="onPageLoaded()">
+    <body>
         <a href="index.html">
             <img src="Assets/BetaMC_Logo.png" class="navLogo">
         </a>
@@ -24,15 +25,11 @@
             </div>
         </nav>
 
-        <div id="mainDiv">
+        <div id="mainAbout">
             <div id="mainText">
-                <h1>BetaMC</h1>
-                <div class="rotate"><div id="splashText" class="pop">betamc.org</div></div>
-                <h2 class="server-ip" onclick="copyToClipboard('betamc.org')" style="cursor:pointer;">IP: betamc.org</h2>
-                <span>"True and Real" Beta 1.7.3 Minecraft<br></span><br>
-            </div> 
-            <div id="discordLink">
-                <a href="https://discord.gg/Kkd4Fqs97t"><img src="Assets/discord-mark-white.png" alt="Discord link">Join our Discord!</a>
+                    <div id="aboutContent">
+                        <span><a href="https://www.tiktok.com/@bmcserver">Redirecting to the TikTok, if you don't get redirected click on this text.</a></span><br>
+                    </div>
             </div>
         </div>
         <div class="footerContainer">
@@ -45,9 +42,4 @@
             <a href="https://www.tiktok.com/@bmcserver"><img src="Assets/tiktok-logo-32.png" alt="TikTok link"></a>
         </div>
     </body>
-    <script>
-        function copyToClipboard(text) {
-          navigator.clipboard.writeText(text);
-        }
-    </script>
 </html>
