@@ -1,0 +1,23 @@
+:80 {
+    root * /srv
+    encode zstd gzip
+
+    try_files {path} {path}.html {path}
+
+    templates
+    file_server
+
+    @wiki path_regexp wiki ^/wiki(/.*)?$
+    redir @wiki {env.WIKI_URL}{re.wiki.1} 301
+
+    @foo path /ratgame*
+    redir @foo {env.RATGAME_URL} 301
+
+    handle_errors {
+        @404 expression {http.error.status_code} == 404
+        rewrite @404 /404.html
+
+        templates
+        file_server
+    }
+}

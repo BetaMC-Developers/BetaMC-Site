@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BetaMC - Home</title>
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="/Assets/BetaMC_Favicon.png">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css">
+    </head>
+
+    <body onload="onPageLoaded()">
+        {{include "partial/navbar.html"}}
+        <div id="mainDiv">
+            <div id="mainText">
+                <h1>BetaMC</h1>
+                <div class="rotate"><div id="splashText" class="pop">betamc.org</div></div>
+                <h2 class="server-ip" onclick="copyToClipboard('betamc.org')" style="cursor:pointer;">IP: betamc.org</h2>
+                <span>"True and Real" Beta 1.7.3 Minecraft<br></span><br>
+            </div> 
+            <div id="discordLink">
+                <a href="https://discord.gg/Kkd4Fqs97t"><img src="/Assets/discord-mark-white.png" alt="Discord link">Join our Discord!</a>
+            </div>
+        </div>
+        {{include "partial/footer.html"}}
+    </body>
+    <script>
+        function copyToClipboard(text) {
+          navigator.clipboard.writeText(text);
+        }
+    </script>
+</html>
