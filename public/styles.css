@@ -6,23 +6,22 @@
     font-family: minecraftia;
 }
 .navLogo {
-    height: 60px;
+    height: 36px;
     width: auto;
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 15px;
     z-index: 10;
 }
 .navbar {
-    padding: 15px;
-    padding-left: 100px;
-    padding-top: 25px;
-    align-items: left;
-    padding-bottom: 20px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-top: 14px;
+    padding-bottom: 10px;
 }
 .navbar a {
-    margin: 0 20px;
-    font-size: 20;
+    margin: 0 14px;
+    font-size: 14px;
     color: white;
     text-decoration: none;
 }
@@ -41,6 +40,7 @@ body {
     background-size: cover;
     overflow: hidden;
     display: flex;
+    margin: 0;
 }
 
 body.donations {
